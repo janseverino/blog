@@ -1,0 +1,14 @@
+.banner{
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-blue-technology-background-picture-image_494471.jpg);
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.banner-container{
+    max-width: 350px;
+}

@@ -1,0 +1,25 @@
+
+.search-box{
+    position: absolute;
+    z-index: 5;
+    background: white;
+    width: 450px;
+    margin-top: 5px;
+    border: solid 1px #dbdbdb;
+    border-radius: 7px;
+    padding: 0px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.search-box > li {
+    list-style: none;
+    border-bottom: solid 1px #ecebeb;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+.search-box > li:hover {
+    background-color: #f6f6f6;
+    cursor: pointer;
+}

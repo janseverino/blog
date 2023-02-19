@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import HeaderMenuBar from "./Components/Header/Header";
+import PagesRoutes from "./Routes/Routes";
+import { BrowserRouter as Router } from "react-router-dom";
+import { BlogProvider } from "./Context/BlogContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <BlogProvider>
+        <div className="App">
+          <HeaderMenuBar />
+          <div className="p-2 main-body">
+            <main className="p-2" style={{minHeight: "35.5rem"}}>
+              <PagesRoutes />
+            </main>
+            <footer>        
+              <p className="copyright">Blog's project made by Jan Severino © 2023</p>
+            </footer>
+          </div>
+        </div>
+      </BlogProvider>
+    </Router>
   );
 }
 
